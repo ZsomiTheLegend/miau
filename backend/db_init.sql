@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS kave CHARACTER SET utf8mb4 COLLATE utf8mb4_hungarian_ci;
+
+USE kave;
+
+CREATE TABLE IF NOT EXISTS Kaves (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nev VARCHAR(255) NOT NULL,
+    ar INT,
+    suly VARCHAR(50),
+    szarmazasiHely VARCHAR(100),
+    darabSzam INT DEFAULT 1
+);

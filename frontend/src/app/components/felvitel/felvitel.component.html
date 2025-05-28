@@ -1,0 +1,10 @@
+<h2>Új kávé felvitele</h2>
+<div *ngIf="hiba" style="color: red;">{{ hiba }}</div>
+<form (ngSubmit)="kuldes()">
+  <input placeholder="Név" [(ngModel)]="ujKave.nev" name="nev" required>
+  <input placeholder="Ár" [(ngModel)]="ujKave.ar" name="ar" type="number">
+  <input placeholder="Súly" [(ngModel)]="ujKave.suly" name="suly">
+  <input placeholder="Származási hely" [(ngModel)]="ujKave.szarmazasiHely" name="szarmazasiHely">
+  <input placeholder="Darabszám" [(ngModel)]="ujKave.darabSzam" name="darabSzam" type="number">
+  <button type="submit">Küldés</button>
+</form>

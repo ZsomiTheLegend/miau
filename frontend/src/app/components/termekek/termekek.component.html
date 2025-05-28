@@ -1,0 +1,17 @@
+<h2>Kávék listája</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Név</th><th>Ár</th><th>Súly</th><th>Származási hely</th><th>Darabszám</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let k of kavak">
+      <td>{{k.nev}}</td>
+      <td>{{k.ar}}</td>
+      <td>{{k.suly}}</td>
+      <td>{{k.szarmazasiHely}}</td>
+      <td>{{k.darabSzam}}</td>
+    </tr>
+  </tbody>
+</table>
